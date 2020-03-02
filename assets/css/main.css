@@ -2253,6 +2253,7 @@ input, select, textarea {
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
 		background-repeat: repeat, no-repeat;
+		text-pos
 	}
 
 /* One */
@@ -2427,3 +2428,9 @@ input, select, textarea {
 		padding-left: 20px;
 		padding-right: 20px;
 	  }
+
+.content_btm {
+position: absolute;
+bottom: 5%;
+
+}

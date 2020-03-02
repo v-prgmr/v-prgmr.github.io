@@ -11,6 +11,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style> 
+            .main_div { 
+                text-align:center; 
+                position: relative; 
+				left: center; 
+				top: 200px;
+                height: 200px; 
+                width: 1000px; 
+                background-color: transparent;  
+            } 
+            .sub_div { 
+                position: absolute; 
+                bottom: -20px; 
+            } 
+            p { 
+                margin-left:110px; 
+            } 
+        </style> 
 	</head>
 	<body class="is-preload">
 
@@ -30,11 +48,17 @@
 
 		<!-- Intro -->
 			<section id="intro" class="main style1 dark fullscreen">
-				<div class="content">
+				<div class="main_div">
 					<header>
-						<h2><b><br><br><br><br><font face = "Times New Roman">engineer</font> <i><font face = "Times New Roman" size = "9"> noun </font></b></i></h2>
+						<h2><font face = "Times New Roman">engineer</font> <i><font face = "Times New Roman" size = "9"> noun </font></b></i></h2>
 					</header>
-					<p align="justify"><font face = "Times New Roman">I am a graduate engineering student living in Germany. My idea of fun is programming in Python and C++. I am an outdoor person who loves biking over running. I sketch portraits, play video games, and I enjoy talking new technology, particularly Sustainable engineering.</p>
+					<div class="sub_div">  
+					<p align="justify"><font face = "Times New Roman">
+						I am a graduate engineering student living in Germany. My idea of fun is programming in Python and C++. 
+						I am an outdoor person who loves biking over running. I sketch portraits, play video games, and I enjoy talking new technology, 
+						particularly Sustainable engineering.</p>
+					</div> 
+
 					<footer>
 						<a href="#one" class="button style2 down">More</a>
 					</footer>
