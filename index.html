@@ -16,7 +16,19 @@
                 position: absolute; 
 				bottom: 20px;
 				width: 70%;  
-            } 
+			}
+			.p{
+				font-family: "Times New Roman"
+			}
+			h4 {
+				display: block;
+				font-size: 1em;
+				margin-top: 1.33em;
+				margin-bottom: 1.33em;
+				margin-left: 0;
+				margin-right: 0;
+				font-weight: bold;
+			}
         </style> 
 	</head>
 	<body class="is-preload">
@@ -28,7 +40,7 @@
 					<ul>
 						<li><a href="#intro"><font color='white'>Intro</font></a></li>
 						<li><a href="#one"><font color='white'>Who I Am</font></a></li>
-						<li><a href="#two"><font color='white'>What I Do</a></li>
+						<li><a href="#two"><font color='white'>What I Work With</a></li>
 						<li><a href="#work"><font color='white'>My Projects</a></li>
 						<li><a href="#contact"><font color='white'>Contact</a></li>
 					</ul>
@@ -41,7 +53,7 @@
 						<header>
 							<h2><font face = "Times New Roman">engineer</font> <i><font face = "Times New Roman" size = "9"> noun </font></b></i></h2>
 						</header>
-						<p align="justify"><font face = "Times New Roman"></font>
+						<p class="p" align="justify">
 						I am a graduate engineering student living in Germany. My idea of fun is programming in Python and C++. 
 						I am an outdoor person who loves biking over running. I sketch portraits, play video games, and I enjoy talking new technology, 
 						particularly Sustainable engineering.
@@ -49,7 +61,7 @@
 				</div> 
 
 					<footer>
-						<a href="#one" class="button style2 down" style="position: relative; top: 10%;">More</a>
+						<a href="#one" class="button style2 down" style="position: relative; top: -30px;">More</a>
 					</footer>
 				</div>
 			</section>
@@ -60,9 +72,9 @@
 					<header>
 						<h2>Who I Am</h2>
 					</header>
-					<p align="justify">I love building robots. Though I started out as a mechanical engineer, I was deeply intrigued by the interplay between hardware and software. Eventually, I started getting my hands dirty with software algorithms. Having had experiences ranging from designing suspension systems for a student formula racecar to developing object detection algorithms using AI for autonomous driving, I have constantly been on the pursuit of assimilating new concepts and learning new skills.
+					<p class="p" align="justify">I enjoy building robots. Though I started out as a mechanical engineer, I was deeply intrigued by the interplay between hardware and software. Eventually, I started getting my hands dirty with software algorithms. Having had experiences ranging from designing suspension systems for a student formula racecar to developing object detection algorithms using AI for autonomous driving, I have constantly been on the pursuit of assimilating new concepts and learning new skills.
 						
-					>If not found at my desk working on side projects like building robot vacuum cleaners<add a few more and say etc>, you can find me editing videos, flying drones, or enjoying a ride under the sun.</p>
+					<br>If not found at my desk working on side projects like building robot vacuum cleaners, or Arduino based RFID computer login system, or Raspberry Pi based home automation system, you can find me editing videos, flying drones, or enjoying a ride under the sun.</p>
 				</div>
 				<a href="#two" class="button style2 down anchored">Next</a>
 			</section>
@@ -71,9 +83,33 @@
 			<section id="two" class="main style2 left dark fullscreen">
 				<div class="content box style2">
 					<header>
-						<h2>What I Do</h2>
-					</header>
-					<p>I am currently working on my master thesis research at Audi AG on the topic of extrinsic multi modal sensor calibration for autonomous driving. Prior to this I have  </p>
+						<h2>What I Work With</h2>
+					</header>				
+					<p class="p">
+						My professional and freelance project works deal with the following tools and technologies.</p>
+						<!-- Tab links -->
+	<div class="tabc">
+	<button style="position: absolute;left: 10px;" class="tablinks" onclick="openCity(event, 'London')">London</button>
+	<button style="position: absolute;left: auto;" class="tablinks" onclick="openCity(event, 'Programming tools')">Paris</button>
+	<button style="position: absolute;left: 90px;" class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+  	</div>
+  
+  <!-- Tab content -->
+  <div id="London" class="tabcontentc">
+	<h3>London</h3>
+	<p>London is the capital city of England.</p>
+  </div>
+  
+  <div id="Paris" class="tabcontentc">
+	<h3>Paris</h3>
+	<p>Paris is the capital of France.</p>
+  </div>
+  
+  <div id="Tokyo" class="tabcontentc">
+	<h3>Tokyo</h3>
+	<p>Tokyo is the capital of Japan.</p>
+  </div>
+					  
 				</div>
 				<a href="#work" class="button style2 down anchored">Next</a>
 			</section>
@@ -161,6 +197,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+	
 	</body>
 </html>

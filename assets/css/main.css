@@ -713,8 +713,8 @@ input, select, textarea {
 		.button.anchored,
 		button.anchored {
 			position: absolute;
-			left: 670px;
-			top: 20px;
+			left: 50%;
+			top: 0px;
 		}
 
 		input[type="button"]:hover,
@@ -2416,21 +2416,40 @@ input, select, textarea {
 
 	.cuntainer {
 		position: relative;
-	  }
-	  
-	  /* Bottom right text */
-	  .text-block {
-		position: absolute;
-		bottom: 20px;
-		right: 20px;
-		background-color: black;
-		color: white;
-		padding-left: 20px;
-		padding-right: 20px;
-	  }
-
-.content_btm {
-position: absolute;
-bottom: 5%;
-
-}
+	}
+	/* Style the tab */
+.tabc {
+	overflow: auto;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button.custom {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button.custom:hover {
+	background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.custom.active {
+	background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontentc {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+  }
