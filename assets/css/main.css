@@ -2416,13 +2416,13 @@ background-color: black;
 	padding: 20px;
 	border: 1px solid #888;
 	width: 100%; /* Could be more or less, depending on screen size */
-	height: 130vh;
+	height: auto;
   }
   
   /* The Close Button */
   .close_modal {
 	color: #ffffff;
-	float: right;
+	float: left;
 	font-size: 28px;
 	font-weight: bold;
 	background-color: black;
