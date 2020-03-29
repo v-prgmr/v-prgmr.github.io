@@ -209,7 +209,7 @@ var span5 = document.getElementsByClassName("close_modal")[4];
 
 // When the user clicks on the button, open the modal
 btn1.onclick = function() {
-	modal1.style.display = "";
+	modal1.style.display = "block";
 }
 btn2.onclick = function() {
 	modal2.style.display = "block";
@@ -228,7 +228,6 @@ btn5.onclick = function() {
 span1.onclick = function() {
 	modal1.style.display = "none";
 }
-// When the user clicks on <span> (x), close the modal
 span2.onclick = function() {
 	modal2.style.display = "none";
   }
@@ -256,4 +255,35 @@ window.onclick = function(event) {
   if (event.target == modal4) {
     modal4.style.display = "none";
   }
+  if (event.target == modal5) {
+    modal5.style.display = "none";
+  }
 }
+
+function isScrolledIntoView(elem)
+{
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+    return ((elemBottom >= docViewTop) && (elemTop <= docViewBottom) && (elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+
+$(window).scroll(function() {    
+    if(isScrolledIntoView($('#two')))
+    {
+		modal1.style.display = "none";
+		modal2.style.display = "none";
+		modal3.style.display = "none";
+		modal4.style.display = "none";
+		modal5.style.display = "none";
+	}
+	if(isScrolledIntoView($('#contact')))
+    {
+		modal1.style.display = "none";
+		modal2.style.display = "none";
+		modal3.style.display = "none";
+		modal4.style.display = "none";
+		modal5.style.display = "none";
+    }     
+});
