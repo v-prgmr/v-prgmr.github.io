@@ -2410,8 +2410,7 @@ background-color: black;
 	position: relative;
 	left: 0;
 	top: 20%;
-	background-color: #c7c7c7;
-	opacity: 90%;
+	background-color:rgba(223, 217, 217,0.9);
 	margin: 0% auto; /* 15% from the top and centered */
 	padding: 20px;
 	border: 1px solid rgb(160, 160, 160);
