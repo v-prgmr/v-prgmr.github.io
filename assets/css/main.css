@@ -2264,7 +2264,16 @@ input, select, textarea {
 /* One */
 
 	#one {
-		background: url("images/overlay.png"), url("../../images/one.jpg");
+		background: url("images/overlay.png"), url("../../images/one.jpeg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/* edu */
+
+	#edu {
+		background: url("images/overlay.png"), url("../../images/exp.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -2273,14 +2282,14 @@ input, select, textarea {
 /* Two */
 
 	#two {
-		background: url("images/overlay.png"), url("../../images/two.jpg");
+		background: url("images/overlay.png"), url("../../images/two.jpeg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
 	
 	#work {
-		background: url("images/overlay.png"), url("../../images/three.jpg");
+		background: url("images/overlay.png"), url("../../images/three.jpeg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -2376,7 +2385,7 @@ width: 65px;
 height: 65px;
 transform: translate(-50%, -50%);
 -ms-transform: translate(-50%, -50%);
-background-image: url("images/overlay.png.svg");
+background-image: url("images/overlay.png");
 background-color: rgb(255, 253, 253);
 text-align: center; 
 padding: 5px;
