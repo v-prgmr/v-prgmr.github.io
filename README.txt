@@ -1,1 +1,2 @@
-More than 50% refactored by VRK
+Base template: https://html5up.net/big-picture
+Integrated more elements such as responsive model boxes
