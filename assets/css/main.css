@@ -2662,3 +2662,9 @@ body.is-touch .main {
 figure {
 	display: inline-block;
 }
+
+.audio-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
